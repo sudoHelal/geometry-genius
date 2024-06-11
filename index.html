@@ -94,9 +94,16 @@
                         <figure><img src="images/pentagon.png" alt="Shoes" /></figure>
                         <div class="card-body">
                           <h2 class="text-center">Pentagon</h2>
-                          <p class="text-center">A = (5 / 2) x s x a</p>                    
+                          <p class="text-center">A = (5 / 2) x s x a</p>
+                          <div class="flex">
+                            <input type="text" placeholder="side" id="side-input" class="w-24 text-2xl rounded-md">
+                            <span class="mx-3">cm</span>
+                            <input type="text" placeholder="length" id="length-input"  class="w-24 text-2xl rounded-md">
+                            <span>cm</span>
+                          </div>                    
                           <div class="card-actions">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                            <p class="text-2xl">Area <span id="pentagon-result"></span><span> cm<sup>2</sup></span></p>
+                            <button class="btn btn-primary w-full" onclick="pentagonArea()">Calculate</button>
                           </div>
                         </div>
                       </div>
@@ -133,5 +140,6 @@
     <script src="script/parallelogram.js"></script>
     <script src="script/rhombus.js"></script>
     <script src="script/ellipse.js"></script>
+    <script src="script/pentagon.js"></script>
   </body>
 </html>
