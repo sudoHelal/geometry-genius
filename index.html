@@ -104,9 +104,16 @@
                         <figure><img src="images/ellipse.png" alt="Shoes" /></figure>
                         <div class="card-body">
                           <h2 class="text-center">Ellipse</h2>
-                          <p class="text-center">A=πab</p>
+                          <p class="text-center">A = π * a * b</p>
+                          <div class="flex">
+                            <input type="text" placeholder="A" id="major-axis" class="w-24 text-2xl rounded-md">
+                            <span class="mx-2">cm</span>
+                            <input type="text" placeholder="B" id="minor-axis" class="w-24 text-2xl rounded-md">
+                            <span>cm</span>
+                          </div>
                           <div class="card-actions">
-                            <button class="btn btn-primary w-full">calculate</button>
+                            <p class="text-2xl">Area <span id="ellipse-result"></span> <span> cm<sup>2</sup></span></p>
+                            <button class="btn btn-primary w-full" onclick="ellipseArea()">calculate</button>
                           </div>
                         </div>
                       </div>
@@ -125,5 +132,6 @@
     <script src="script/rectangle.js"></script>
     <script src="script/parallelogram.js"></script>
     <script src="script/rhombus.js"></script>
+    <script src="script/ellipse.js"></script>
   </body>
 </html>
